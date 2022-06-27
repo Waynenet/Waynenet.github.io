@@ -21,7 +21,7 @@
 
 /* valine 评论 */
 
-/* 去除了dark模式下头像border和padding [data-theme='dark'] 
+/* 去除了dark模式下头像border和padding [data-theme='dark'] */
 .v[data-class=v] .vcards .vcard .vimg {
     padding: 0;
     border: none;
@@ -53,7 +53,7 @@
 .v[data-class=v] .vcontent .vemoji[alt|=menhera] {
     max-width: 300px !important;
     /* vertical-align: middle; */
-/*    margin: 8px 1px;
+    margin: 8px 1px;
     display: block !important;
 }
 
@@ -84,7 +84,7 @@
         width: 21% !important;
     }
 }
-*/
+
 
 /* 背景宇宙星光  */
 #universe{
