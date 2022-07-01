@@ -3,7 +3,7 @@ const workboxVersion = '5.1.3';
 importScripts(`https://storage.googleapis.com/workbox-cdn/releases/${workboxVersion}/workbox-sw.js`);
 
 workbox.core.setCacheNameDetails({
-    prefix: "your name"
+    prefix: "wayne"
 });
 
 workbox.core.skipWaiting();
@@ -12,7 +12,7 @@ workbox.core.clientsClaim();
 
 // 注册成功后要立即缓存的资源列表
 // 具体缓存列表在gulpfile.js中配置，见下文
-workbox.precaching.precacheAndRoute([{"revision":"be8addcd9002312cdfcc47395408d36a","url":"./404.html"},{"revision":"f6afb1522a3a04f58f579139b6dd0b38","url":"./index.html"},{"revision":"d88b63a0b350b4838f3398a38f0520e8","url":"./js/main.js"},{"revision":"9d7b4e0774ad9cd88ce3680a33637193","url":"./css/index.css"}],{
+workbox.precaching.precacheAndRoute([{"revision":"852f9803cc7b145deddd4e1122c1cf64","url":"./404.html"},{"revision":"b5bbf055a101e7d599463f228c954f41","url":"./index.html"},{"revision":"d88b63a0b350b4838f3398a38f0520e8","url":"./js/main.js"},{"revision":"9d7b4e0774ad9cd88ce3680a33637193","url":"./css/index.css"}],{
     directoryIndex: null
 });
 
