@@ -17,7 +17,9 @@ jobs:
         id: payload_data
         run: |
           echo "tag_name=${{ github.event.client_payload.tag }}" >> $GITHUB_ENV
-          echo "release_body=${{ github.event.client_payload.message }}" >> $GITHUB_ENV
+          echo "release_body<<EOF" >> $GITHUB_ENV
+          echo "${{ github.event.client_payload.message }}" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: 创建 Release
         uses: actions/create-release@v1
